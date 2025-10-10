@@ -1,0 +1,27 @@
+header {
+    background: #0f0d0d73;
+    color: #ffffff;
+    padding: 15px 5px;
+    text-align: center;
+} /* This set's the borrders and background, along with the alighment of the title of my page */
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    background-color: #130d0dc4;
+} /* This sets the font, line height and entire background colour for the website */
+
+section {
+    margin: 15px;
+    padding: 15px;
+    background: #0c0808d3;
+    border-radius: 5px;
+} /* This determines the borders and background colour of the sections */
+
+h2 {
+    color: #ffffff;
+} /* This sets the colour of the h2 headings text*/
+
+p {
+    color: #ffffff;
+} /* This sets the colour of normal paragraph text*/
