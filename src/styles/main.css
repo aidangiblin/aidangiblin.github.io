@@ -1,27 +1,73 @@
 header {
     background: #0f0d0d73;
     color: #ffffff;
-    padding: 15px 5px;
+    padding: 1px 1px;
     text-align: center;
-} /* Set's the borrders and background, along with the alighment of the title of my page */
+}
 
 body{
     font-family: 'Times New Roman', Times, serif;
     line-height: 1.6;
-    background-color: #FF0000;
-} /* Sets the font, line height and entire background colour for the website */
+    background-color: #e4e0de;
+    margin: 0;
+    padding: 0;
+}
 
 section {
     margin: 15px;
     padding: 15px;
     background: #0c0808d3;
     border-radius: 5px;
-} /* Determines the borders and background colour of the sections */
+}
 
 h2 {
     color: #ffffff;
-} /* Determines the colour of the h2 headings text*/
+}
 
 p {
     color: #ffffff;
-} /* Sets the colour of normal paragraph text*/
+}
+
+li {
+    color: #ffffff;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav a {
+    color:#ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    border:#333 solid 2px;
+    background-color: #0c0808d3;
+}
+
+nav a:hover {
+    background: #0c0808f3;
+    border-radius: 5px;
+}
