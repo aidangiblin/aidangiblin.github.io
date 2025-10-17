@@ -6,7 +6,7 @@ header {
 }
 
 body{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: merriweather, sans-serif;
     line-height: 1.6;
     background-color: #868381;
     margin: 0;
@@ -47,6 +47,16 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 nav {
