@@ -1,96 +1,165 @@
-header {
-    background: #0f0d0d73;
-    color: #ffffff;
-    padding: 1px 1px;
-    text-align: center;
+/* GLOBAL RESET & VARIABLES */
+:root {
+    --bg-color: #121212;       /* Deep dark background */
+    --text-color: #e0e0e0;     /* Soft white text */
+    --accent-color: #4CAF50;   /* Green Accent */
+    --card-bg: #1e1e1e;        /* Slightly lighter cards */
 }
 
-body{
-    font-family: merriweather, sans-serif;
+body {
+    font-family: 'Inter', sans-serif; /* Modern, clean font */
     line-height: 1.6;
-    background-color: #868381;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     margin: 0;
     padding: 0;
-}
-
-section {
-    margin: 14px;
-    padding: 14px;
-    background: #0c0808d3;
-    border-radius: 5px;
-}
-
-h2 {
-    color: #ffffff;
-}
-
-p {
-    color: #ffffff;
-}
-
-li {
-    color: #ffffff;
-}
-
-a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background: #333;
-    color: #ffffff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-footer a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer a:hover { /* Redundant but keeping incase i decide to remove a:hover */
-    text-decoration: underline;
-}
-
-nav {
-    background: transparent;
-    padding: 10px 0;
-    margin-bottom: -16px;
-    margin-top: 0px;
     display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* HERO SECTION */
+header {
+    height: 85vh; /* Takes up 85% of the screen height */
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    background: radial-gradient(circle at center, #252525 0%, #121212 100%);
+    padding: 20px;
+}
+
+header h1 {
+    font-family: 'Merriweather', serif; /* serif font for the main title */
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #a0a0a0;
+    max-width: 600px;
+}
+
+/* NAVIGATION */
+nav {
+    position: sticky;
+    top: 0;
+    background: rgba(18, 18, 18, 0.95);
+    padding: 15px 0;
+    border-bottom: 1px solid #333;
+    z-index: 100;
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav a {
-    color:#ffffff;
+    color: var(--text-color);
     text-decoration: none;
-    padding: 10px 15px;
-    display: block;
-    border:#ffffff solid 2px;
-    background-color: #0c0808d3;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s;
 }
 
 nav a:hover {
-    background: #0c0808f3;
-    border-radius: 5px;
+    color: var(--accent-color);
+}
+
+/* MAIN CONTENT */
+main {
+    flex: 1;
+    width: 100%;
+    padding: 0 20px; /* Keeps side padding on mobile */
+    box-sizing: border-box; /* Crucial to prevent overflow */
+}
+
+section {
+    max-width: 800px;   /* Hard limit on width */
+    width: 100%;        /* Fill available space up to limit */
+    margin-left: auto;  /* Centering (left) */
+    margin-right: auto; /* Centering (right) */
+    margin-bottom: 60px;
+    text-align: left;   /* Keeps text readable */
+}
+
+/* GREEN LINE SEPARATOR */
+h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 2rem;
+    color: var(--text-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
+    margin: 30px auto;
+    display: table;
+    text-align: center;
+}
+
+p, li {
+    color: #cccccc;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+ul {
+    padding-left: 40px; /* Gives bullets room to show up */
+    margin: 0;
+    text-align: left;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* LINKS */
+a {
+    color: var(--accent-color); 
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+a:hover {
+    color: #81C784;
+    text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background: #0f0f0f;
+    color: #777;
+    margin-top: auto;
+    border-top: 1px solid #333;
+}
+
+footer a {
+    color: #aaa;
+    margin: 0 15px;
+    font-weight: normal;
+}
+
+footer a:hover {
+    color: var(--accent-color);
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+        display: block; /* Full width line on mobile looks better */
+    }
 }
