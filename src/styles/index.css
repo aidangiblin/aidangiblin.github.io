@@ -89,6 +89,9 @@ section {
     margin-right: auto; /* Centering (right) */
     margin-bottom: 60px;
     text-align: left;   /* Keeps text readable */
+    padding-left: 20px; /* Side padding for readability */
+    padding-right: 20px; /* Side padding for readability */
+    box-sizing: border-box;
 }
 
 /* GREEN LINE SEPARATOR */
