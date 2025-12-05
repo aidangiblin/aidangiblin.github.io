@@ -14,13 +14,13 @@ Aidan Giblin
 ​I view engineering as a tool for enforcing ethical standards in the digital economy, moving beyond "minimising costs" to "maximising sustainability."
 ​Featured Projects
 ​Sovereign Infrastructure (Home NAS)
-A high-availability, self-hosted server architecture designed to eliminate reliance on commercial cloud providers.
+​A high-availability, self-hosted server architecture designed to eliminate reliance on commercial cloud providers.
 ​Architecture: Linux (OpenMediaVault), Docker, and RAID 1 redundancy.
 ​Function: Manages local media streaming, automated backups, and private game servers, ensuring zero-knowledge privacy and full data ownership.
 ​IoT Micro-Climate Analysis
-An embedded systems engineering project utilizing ESP32 microcontrollers to capture hyper-local environmental data.
+​An embedded systems engineering project utilizing ESP32 microcontrollers to capture hyper-local environmental data.
 ​Objective: To conduct a comparative accuracy study between granular local sensor data and major algorithmic weather forecasts using Python for statistical analysis.
 ​Ethical Supply Chain Audit (Data Science)
-A quantitative analysis project mapping the relationships between consumer products and their parent entities.
+​A quantitative analysis project mapping the relationships between consumer products and their parent entities.
 ​Methodology: Using graph databases (Neo4j) to trace supply chains and calculate the "convenience tax" of ethical consumption.
 ​Goal: To visualize the environmental and social impact of transitioning a standard consumer inventory to 100% certified ethical alternatives.
