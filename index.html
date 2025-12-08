@@ -4,7 +4,8 @@
      <meta charset="UTF-8"> 
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Aidan Giblin</title>
-     <link rel ="stylesheet" href ="src/styles/index.css"> <!--File path to the relevant .css file for the homepage -->
+     <link rel ="stylesheet" href ="src/styles/index.css"> <!-- File path to the relevant .css file for the homepage -->
+     <link rel="stylesheet" href="src/styles/snow.css"> <!-- Snow Theme .css -->
      <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Google Fonts Preconnect-->
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
@@ -19,7 +20,7 @@
         <li><a href="src/pages/projects.html">Projects</a></li>
         </ul>
     </nav>  
-    <section id="currenteducation"> <!--Section for Current Education, My Future Qualifications-->
+    <section id="currenteducation"> <!-- Section for Current Education, My Future Qualifications -->
         <h2>Education:</h2>
         <ul><li>BTEC National Extended Diploma in Digital Technologies. (September 2025 -> June 2027).</li>
             <li>Self-studied A-level in Mathematics. (September 2025 -> May/June 2027).</li>
@@ -29,8 +30,8 @@
     </section>
 
     <section id="About Me">
-        <h2>My Core Principles</h2>
-        <p>I am driven by the belief that technology should be a used as a force for good, grounded in my strong respect for user privacy. My passion is not only to support mission-driven organizations — from independent ethical businesses to Non-Profits and positively impactful organisations — but to also contribute and collaborate on solutions that help power their missions and ethos.</p>
+        <h2>About Me</h2>
+        <p>I'm a student taking on a Level 3 BTEC course alongside a self-studied mathematics qualification. In 2026, I will be taking on a Neo4j graphing project which can be found on my projects page <a href="src/pages/projects.html">here</a>.</p>
     </section>
     
     <!--<section id="myprojects">
@@ -45,9 +46,31 @@
     
     <footer>
         <p>Copyright &copy; 2025 Aidan Giblin<br>
-            <a href="https://github.com/aidangiblin" rel="noopener noreferrer">My Github Profile</a><br>
-            <a href="https://www.linkedin.com/in/aidan-giblin-9786aa388" rel="noopener noreferrer">My LinkedIn Profile</a>
+            <a href="https://github.com/aidangiblin" rel="noopener noreferrer">Github</a><br>
+            <a href="https://www.linkedin.com/in/aidan-giblin-9786aa388" rel="noopener noreferrer">LinkedIn</a>
+            <!-- <a href="https://instagram.com/persistentrook" rel="noopener noreferrer">Instagram</a><br> -->
         </p>
     </footer>
+
+
+    <!-- 
+      Snow Effect Library
+      Source: magic-snowflakes by Heinrich Goebl (hcodes)
+      Repository: https://github.com/hcodes/snowflakes
+      NPM: https://www.npmjs.com/package/magic-snowflakes
+      License: MIT
+    -->
+    <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+    <script>
+        var snowflakes = new Snowflakes({
+            color: '#ffffff',
+            count: 14,
+            minOpacity: 0.2,
+            maxOpacity: 0.6,
+            speed: 1.8,
+            zIndex: 9999
+        });
+    </script>
+
 </body>
 </html>

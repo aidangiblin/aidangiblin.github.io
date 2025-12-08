@@ -32,3 +32,6 @@ A quantitative analysis project mapping the relationships between consumer produ
 Methodology: Using graph databases (Neo4j) to trace supply chains and calculate the "convenience tax" of ethical consumption.
 
 Goal: To visualize the environmental and social impact of transitioning a standard consumer inventory to 100% certified ethical alternatives.
+
+Credits and Attributions:
+- "Snow effect by Heinrich Goebl. https://github.com/hcodes/snowflakes"

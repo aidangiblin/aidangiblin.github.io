@@ -13,7 +13,7 @@
 <body>
     <header>
         <h1>My Projects</h1>
-        <p>A collection of my ongoing projects.</p>
+        <p>A gallary of my ongoing and completed projects.</p>
     </header>
 
     <!--Navigation Bar-->
@@ -29,6 +29,18 @@
             <h2>Ongoing projects</h2>
              
             <div class="project-grid">
+                <!--Going Ethical-->
+                <div class="project-card">
+                    <img src="../../assets/ethics-placeholder.jpg" alt="Image of [Placeholder]" class="project-image">
+                    <div class="project-content">
+                        <h3>Ethical Supply Chain Audit</h3>
+                        <p>A quantitative analysis project mapping the relationships between consumer products and their parent entities. Uses graph databases to trace supply chains and calculate the "convenience tax" of certified ethical alternatives, visualizing the impact of supply chain sovereignty.</p>
+                        <span class="project-tag">Neo4j Graphing</span>
+                        <span class="project-tag">Data Science</span>
+                        <span class="project-tag">Ethical Supply Chain Analysis</span>
+                    </div>
+                </div>
+
                 <!--NAS Server Dashboard-->
                 <div class="project-card">
                     <img src="assets\homeNAS_image.png" alt="Image of NAS" class="project-image">
@@ -36,7 +48,7 @@
                         <h3>NAS Infrastructure</h3>
                         <p>A self-hosted, redundant server built to replace commercial cloud services for media and backups. It utilizes Linux (Open Media Vault), Docker, and RAID 1 to manage media streaming, backups, and private game servers locally.</p>
                         <span class="project-tag">Linux</span>
-                        <span class="project-tag">Docker</span>
+                        <span class="project-tag">Docker Containers</span>
                         <span class="project-tag">RAID 0/1</span>
                     </div>
                 </div>
@@ -50,19 +62,6 @@
                         <span class="project-tag">Python</span>
                         <span class="project-tag">Microcontroller</span>
                         <span class="project-tag">Data Analysis</span>
-                    </div>
-                </div>
-
-                <!--Going Ethical-->
-                <div class="project-card">
-                    <img src="../../assets/ethics-placeholder.jpg" alt="Image of [Placeholder]" class="project-image">
-                    <div class="project-content">
-                        <h3>Ethical Supply Chain Audit</h3>
-                        <p>A quantitative analysis project mapping the relationships between consumer products and their parent entities. Uses graph databases to trace supply chains and calculate the "convenience tax" of certified ethical alternatives, visualizing the impact of supply chain sovereignty.</p>
-                        <span class="project-tag">B-Corps</span>
-                        <span class="project-tag">Data Science</span>
-                        <span class="project-tag">Supply Chain Analysis</span>
-                        <span class="project-tag">Neo4j Graphing</span>
                     </div>
                 </div>
 
@@ -93,18 +92,38 @@
 
         <section id="completed-projects">
             <h2>Completed Projects</h2>
-            <p>Completed projects will appear soon</p>
+            <p></p>
         </section>
     </main>
 
      <footer> <!--Footer Section-->
         <p>Copyright &copy; 2025 Aidan Giblin<br>
-            <a href="https://github.com/aidangiblin" rel="noopener noreferrer">My Github Profile</a><br>
-            <a href="https://www.linkedin.com/in/aidan-giblin-9786aa388" rel="noopener noreferrer">My LinkedIn Profile</a><br>
-            <!-- <a href="https://instagram.com/persistentrook" rel="noopener noreferrer">My Instagram Profile</a><br> -->
+            <a href="https://github.com/aidangiblin" rel="noopener noreferrer">Github</a><br>
+            <a href="https://www.linkedin.com/in/aidan-giblin-9786aa388" rel="noopener noreferrer">LinkedIn</a><br>
+            <!-- <a href="https://instagram.com/persistentrook" rel="noopener noreferrer">Instagram</a><br> -->
             <p>Interested in reaching out? My email is: <a href="mailto:contact@aidangiblin.com" rel="noopener noreferrer">contact@aidangiblin.com</a>.</p>
         </p>
     </footer>
+
+
+    <!-- 
+      Snow Effect Library
+      Source: magic-snowflakes by Heinrich Goebl (hcodes)
+      Repository: https://github.com/hcodes/snowflakes
+      NPM: https://www.npmjs.com/package/magic-snowflakes
+      License: MIT
+    -->
+    <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+    <script>
+        var snowflakes = new Snowflakes({
+            color: '#ffffff',
+            count: 10,
+            minOpacity: 0.2,
+            maxOpacity: 0.6,
+            speed: 1.8,
+            zIndex: 9999
+        });
+    </script>
 
 </body>
 </html>
